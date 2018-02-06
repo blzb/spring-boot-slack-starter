@@ -1,6 +1,6 @@
 package com.blzb.bot.events.controller;
 
-import com.blzb.bot.events.service.EventService;
+import com.blzb.bot.events.service.EventReceiveService;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import java.io.IOException;
 @RestController
 public class EventsController {
     @Autowired
-    EventService messageService;
+    EventReceiveService messageService;
 
     @PostMapping(value = "/slack", produces = MediaType.TEXT_PLAIN_VALUE)
     public String slack(@RequestBody String body) throws IOException {

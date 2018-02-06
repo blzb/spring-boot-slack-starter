@@ -1,11 +1,10 @@
 package com.blzb.bot.events.service.impl;
 
 import com.blzb.bot.events.service.EventHandler;
-import com.blzb.bot.events.service.EventService;
+import com.blzb.bot.events.service.EventReceiveService;
 import com.blzb.bot.events.service.EventTypeEnum;
 import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.*;
@@ -13,8 +12,7 @@ import java.util.*;
 /**
  * Created by apimentel on 2/5/18.
  */
-@Service
-public class EventServiceImpl implements EventService {
+public class EventReceiveServiceImpl implements EventReceiveService {
     @Autowired
     List<EventHandler> eventHandlers;
 

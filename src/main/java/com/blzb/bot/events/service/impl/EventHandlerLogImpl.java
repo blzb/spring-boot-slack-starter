@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 /**
  * Created by apimentel on 2/6/18.
  */
-@Service
 public class EventHandlerLogImpl implements EventHandler {
     @Override
     public EventTypeEnum getEventType() {
