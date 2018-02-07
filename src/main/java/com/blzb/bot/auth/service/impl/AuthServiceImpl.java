@@ -18,7 +18,6 @@ import java.util.Map;
 /**
  * Created by apimentel on 2/5/18.
  */
-@Service
 public class AuthServiceImpl implements AuthService {
 
     private static final String SLACK_URL = "https://slack.com/api/oauth.access?" +

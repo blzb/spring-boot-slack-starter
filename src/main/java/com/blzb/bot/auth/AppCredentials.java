@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 /**
  * Created by apimentel on 2/5/18.
  */
-@Component
 public class AppCredentials {
     @Value("${clientId}")
     private String clientId;
